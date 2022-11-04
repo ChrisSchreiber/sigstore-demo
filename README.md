@@ -18,6 +18,9 @@ git config --local gpg.format x509  # Gitsign expects x509 args
 git verify-commit HEAD
 ```
 
+## gitsign flow
+![](./gitsign.png)
+
 ## Inspect commit signature
 ```
 git cat-file commit HEAD | sed -n '/BEGIN/, /END/p' | sed 's/^ //g' | sed 's/gpgsig //g' | sed 's/SIGNED MESSAGE/PKCS7/g' | openssl pkcs7 -print -print_certs -text
