@@ -43,3 +43,4 @@ cosign verify-blob --cert <(echo $cert | base64 --decode) --signature <(echo $si
 ```
 git config --local gitsign.connectorID https://github.com/login/oauth
 ```
+bump
