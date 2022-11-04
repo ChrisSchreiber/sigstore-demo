@@ -1,1 +1,1 @@
-# sigstore-demo
+# sigstore-gitsign-demo
